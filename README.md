@@ -12,7 +12,7 @@ Bagian ini berisi rangkuman dan referensi dasar dasar pemrograman yang wajib dip
 
 - [Penggunaan Redmine & tata cara SCRUM](https://github.com/medigoid/tech-handbook/blob/develop/redmine-scrum.md)
 
-Bagian ini berisi tentang proses SCRUM yang berjalan di Medigo Indonesia, dan penerapannya di sistem kolaborasi yang digunakan ( Redmine )
+Bagian ini berisi tentang proses SCRUM yang berjalan di Medigo Indonesia, dan penerapannya di sistem kolaborasi yang digunakan ( Trello )
 
 - [Kolaborasi & Review menggunakan _Pull Request_](https://github.com/medigoid/tech-handbook/blob/develop/pull-request-workflow.md)
 
