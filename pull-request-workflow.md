@@ -57,6 +57,7 @@ Untuk repository yang tidak akan mengalami banyak pengembangan ( one and done ),
 	- [ADD] deskripsi penambahan berkas yang dilakukan
 	- [UPDATE] deskripsi *update* yang dilakukan
 	- [FIX] deskripsi perbaikan yang dilakukan
+	- [LINT] deskripsi perapian code sesuai *standard* yang dilakukan
 - [Git Cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet/)
 - [Rewrite Commit History](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History)
 - [Squash Published Commits](https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)
