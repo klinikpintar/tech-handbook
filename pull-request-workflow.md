@@ -27,14 +27,21 @@ Dalam proses _Pull Request_ ini terdapat tiga peran utama, yakni:
 
 Pilihan nama *branch* yang dapat digunakan adalah
 
-- **story**/[nomor redmine] [deskripsi]
+- **story**/[nomor trello]-[deskripsi]
 
 >  Untuk *Story* yang dirasa terlalu besar, pecah ke dalam *Task* yang lebih kecil untuk kemudian di merge ke *branch* `story` sebelum melakukan *Pull Request* ke *branch* `develop`
 
-- **task**/[nomor redmine] [deskripsi]
-- **improvement**/[nomor redmine] [deskripsi]
-- **bug**/[nomor redmine] [deskripsi]
-- **hotfix**/[nomor redmine] [deskripsi]
+- **task**/[nomor trello]-[deskripsi]
+- **improvement**/[nomor trello]-[deskripsi]
+- **bugfix**/[nomor trello]-[deskripsi]
+- **hotfix**/[nomor trello]-[deskripsi]
+
+Contoh:
+
+- task/TQ-091-post-schedule-to-medigo-webhook
+- improvement/w-165-use-promise-all-to-get-schedules-api
+- bugfix/w-150-slot-number-is-undefined
+- hotfix/w-199-health-center-config-not-loaded
 
 **Notes**
 
