@@ -54,7 +54,7 @@ Untuk repository yang tidak akan mengalami banyak pengembangan ( one and done ),
 ### Konsep Git
 
 - Gunakan pesan *commit* yang relevan dan masukkan *tag* yang sesuai.
-  - [DOCS] deskripsi perubahan pada dokumentasi
+	- [DOCS] deskripsi perubahan pada dokumentasi
 	- [ADD] deskripsi penambahan fitur yang dilakukan
 	- [UPDATE] deskripsi *update* yang dilakukan pada fitur yang ada
 	- [FIX] deskripsi perbaikan yang dilakukan
