@@ -53,11 +53,14 @@ Untuk repository yang tidak akan mengalami banyak pengembangan ( one and done ),
  
 ### Konsep Git
 
-- Gunakan pesan *commit* yang relevan dan masukkan *tag* yang sesuai. 
-	- [ADD] deskripsi penambahan berkas yang dilakukan
-	- [UPDATE] deskripsi *update* yang dilakukan
+- Gunakan pesan *commit* yang relevan dan masukkan *tag* yang sesuai.
+  - [DOCS] deskripsi perubahan pada dokumentasi
+	- [ADD] deskripsi penambahan fitur yang dilakukan
+	- [UPDATE] deskripsi *update* yang dilakukan pada fitur yang ada
 	- [FIX] deskripsi perbaikan yang dilakukan
-	- [LINT] deskripsi perapian code sesuai *standard* yang dilakukan
+	- [PERF] deskripsi perubahan yang meningkatkan *performance*
+	- [STYLE] deskripsi perapian code sesuai *standard* yang dilakukan
+	- [REFACTOR] deskripsi code yang diubah tetapi bukan perbaikan atau penambahan fitur
 - [Git Cheatsheet](https://www.git-tower.com/blog/git-cheat-sheet/)
 - [Rewrite Commit History](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History)
 - [Squash Published Commits](https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)
