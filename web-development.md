@@ -103,8 +103,13 @@ Ketika kita menggunakan *try block* dalam sebuah function, satu-satunya yang bol
 ### 10. DRY principle (Don't Repeat Yourself)
 Jangan menggunakan potongan code yang sama berulang-ulang di berbagai tempat. Ketika kita memiliki potongan code yang perlu digunakan berkali-kali, jadikan potongan code tersebut sebagai sebuah function dan panggil function tersebut dimana dibutuhkan.
 
+### 11. Proper use of comments
+Comment diperlukan untuk menjelaskan code yang tidak bisa menjelaskan dirinya sendiri. Pada dasarnya kita harus membuat code kita sangat jelas sampai tidak memerlukan comment. Tetapi ketika ada kondisi dimana code itu sendiri tidak cukup jelas, maka kita perlu menambahkan comment.
+
+Tergantung penggunaannya comment bisa jadi baik maupun buruk.
+
 Referensi tentang clean code:
-- [Clean Code - Uncle Bob / Lesson 1](https://www.youtube.com/watch?v=7EmboKQH8lM&t=2643s)
+- [Clean Code - Uncle Bob](https://www.youtube.com/watch?v=7EmboKQH8lM&list=PLmmYSbUCWJ4x1GO839azG_BBw8rkh-zOj)
 
 ---
 Bacaan tambahan:
