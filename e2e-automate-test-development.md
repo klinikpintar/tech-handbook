@@ -8,6 +8,8 @@ Bagian ini berisi mengenai panduan untuk membuat kode, menggunakan *third-party 
 
 *End to end (e2e) testing* merupakan teknik pengujian untuk memastikan bahwa sistem telah berjalan sesuai alur yang telah ditentukan mulai dari awal sampai akhir di Klinik Pintar Indonesia. *E2E testing* memiliki empat alur utama yang dibagi dalam perencanaan, perancangan, pelaksanaan, dan analisis hasil.
 
+![](https://i.imgur.com/98gApwl.png)
+
 ### Perencanaan
 
 Perencanaan merupakan tahap alur untuk menentukan dan membagi tugas, jadwal, dan sumber daya yang akan digunakan untuk melakukan pengujian pada sistem/modul/fitur/pembaruan/perbaikan yang akan dikerjakan.
@@ -50,6 +52,8 @@ Analisis hasil merupakan tahap alur untuk menganalisis hasil pengujian, mengeval
 
 ---
 
+![](https://i.imgur.com/yV3bmoO.png)
+
 Penerapan *e2e testing* di klinik pintar secara teknik menerapkan pendekatan *functional* dan *non functional*. Setiap pendekatan memiliki daftar teknik/pengujian yang disarankan dan bisa digunakan untuk memenuhi kebutuhan layanan.
 
 ### Functional
@@ -60,7 +64,7 @@ Daftar teknik/pengujian:
 - Sanity testing
 - Regression testing
 - Exploratory testing
-- User Acceptance testing
+- User acceptance testing
 
 ### Non Functional
 Daftar teknik/pengujian:
