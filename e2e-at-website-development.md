@@ -51,9 +51,9 @@ Berikut checklist pengujian yang mesti dilakukan beserta statusnya:
 ### Functional
 Daftar teknik/pengujian:
 - Unit testing
-- Integration testing **(Done - Manual/Automation)**
+- Integration testing **(Done - Manual)**
 - Smoke testing **(Done - Manual/Automation)**
-- Sanity testing **(Done - Manual/Automation)**
+- Sanity testing **(Done - Manual)**
 - Regression testing **(Done - Manual/Automation)**
 - Exploratory testing **(Done - Manual)**
 - User acceptance testing
