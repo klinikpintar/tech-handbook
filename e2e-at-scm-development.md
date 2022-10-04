@@ -59,6 +59,26 @@ Daftar teknik/pengujian:
 ---
 
 ## 3. Naming
+Beberapa aturan secara umum yang perlu diperhatikan dalam naming adalah:
+- Jika nama terlalu panjang, bisa menggunakan akronim (ex: edit data pasien = edp).
+- Hindari nama yang kompleks & panjang.
+
+### Test Script
+File *test script* disimpan dalam folder sesuai platform/sistemnya **scms/catalog** dan memiliki aturan dalam penamaan untuk memudahkan identifikasi & kegunaan, yakni:
+- **Simple Modul**: `<Akronim/Nama Modul>_test` (ex: `product_test`, `mdum_test`).
+- **Specific Modul**: `<Akronim/Nama Modul>_<Akronim/Nama Deskripsi>_test` (ex: `do_backorder_test`, `mdum_ga_test`, `mdum_groupaccess_test`).
+
+Penamaan skenario dalam *test script* memiliki aturan dalam penamaan untuk memudahkan identifikasi & kegunaan, yakni:
+- **Parent**: `Saya sebagai <Peran (Role)> <Aktivitas/Use Case> di <Nama Platform/Sistem> <Deskripsi/Keterangan>` 
+(ex: `Saya sebagai superior gagal login di scm system karena tidak mengisi password`, `Saya sebagai user melihat daftar sales order di scm system`).
+- **Child**: `Saya sebagai <Peran (Role)> <Aktivitas/Use Case> <Deskripsi/Keterangan>`
+(ex: `Saya sebagai superior gagal refuse sales order karena tidak mengisi catatan`, `Saya sebagai super admin mengubah data master data product`).
+
+Penamaan *parent* digunakan untuk menamai skenario utama `(ex: Scenario("nama parent skenario")` dan *child* untuk penanda *sub-scenario* atau keterangan alur dalam skenario utama `(ex: I.say('nama child skenario'))`.
+
+**Penamaan untuk skenario utama/test case yang tidak dimasukan dalam pengujian mengikuti format *child* dan dimasukan di bagian akhir skenario utama yang terkait atau skenario utama terakhir yang dijalankan dalam sebuah *test script***.
+
+### Widget/UI Components
 Masing - masing *widget/ui components* memiliki aturan dalam penamaan untuk memudahkan identifikasi & kegunaan, yakni:
 - **Text/Label**: `txt_<Nama>/txt_<Nama>_<Akronim Deskripsi>` (ex: `txt_title`, `txt_count_lbl`).
 - **Text Field**: `tf_<Nama>/tf_<Nama>_<Akronim Deskripsi>` (ex: `tf_email`).
@@ -70,22 +90,13 @@ Masing - masing *widget/ui components* memiliki aturan dalam penamaan untuk memu
 - **Section**: `sec_<Nama>` (ex: `sec_clinic`).
 - **Table**: `tbl_<Nama>` (ex: `tbl_data`).
 
-Untuk kasus file yang tak punya aturan penamaan, by default mengikuti aturan penamaan `<Nama Komponen>_<Nama>_<Akronim Deskripsi>`.
+Untuk kasus file yang tidak punya aturan penamaan, by default mengikuti aturan penamaan `<Nama Komponen>_<Nama>_<Akronim Deskripsi>`.
 
 Selain itu, penamaan komponen dalam table/daftar, tinggal menambahkan urutan dari data yang tampil setelah penamaan komponennya.
 `<Nama Komponen>_<Nama>_<Akronim Deskripsi>_<Urutan>` (ex: `txt_product_title_0`, `btn_detail_0`, `btn_edit_0`).
 
-Selain penamaan komponen **widget/ui components**, penamaan atribut **class** pada **widget/ui components** juga memiliki aturan umum yakni:
-- **Styling**: `<FontName>-<Weight>-<Size>-<Color>-<Other>` (ex: `roboto-400-16-black`, `roboto-400-16-black-italic`).
-- **Margin**: `<Section/Component>-<State>` (ex: `title-primary`,`card-secondary`).
-- **Other Style Attribut**: `<Custom>-<Akronim Description>` (ex: `custom-animated-hover`,`custom-sign`), menggunakan dash jika ada spasi.
-
-Ketiga aturan tersebut dijadikan satu menggunakan format:
- `<Styling> <Margin> <Other Style Atribut>` (ex: `roboto-400-16-black card-secondary custom-animated-hover`, `roboto-400-16-black title-primary`).
+Selain penamaan komponen **widget/ui components**, penamaan atribut **class** pada **widget/ui components** juga memiliki aturan umum yang mengikuti format pada [Tailwind](https://tailwindcss.com/docs/). *Tim frontend developer belum dapat menentukan format urutan atribut class yang digunakan sehingga belum ada cara untuk mendeteksi atribut class menggunakan pola dan harus mengecek secara manual melalui  dokumentasi di tailwind #hiks.*
  
-Beberapa aturan lainnya yang perlu diperhatikan ialah:
-- Jika nama terlalu panjang, bisa menggunakan akronim (ex: edit data pasien = edp).
-- Hindari nama yang kompleks & panjang.
 ---
 
 ## 4. Flow
@@ -133,6 +144,6 @@ Berikut daftar saran yang sebaiknya dilakukan saat melakukan pengembangan:
 
 ## 6. Known Problem
 Berikut daftar masalah yang teridentifikasi sebagai bug/anomaly/error aneh yang ditemukan dalam pengembangan:
-1. Butuh waktu tunggu lebih untuk proses cud sehingga perlu diatur lebih lama (current accepted waiting time = 7-10 seconds).
+1. Butuh waktu tunggu lebih untuk proses cud sehingga perlu diatur lebih lama (current accepted waiting time = 7-15 seconds).
 
 Silakan tambahkan kesini jika menemukan bug/anomaly/error aneh terbaru dan tambahkan label **[Solved]** jika tidak pernah terjadi lagi atau ada pemberitahuan masalah tersebut telah diselesaikan.
