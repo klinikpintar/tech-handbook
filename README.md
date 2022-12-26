@@ -12,7 +12,7 @@ Bagian ini berisi rangkuman dan referensi dasar dasar pemrograman yang wajib dip
 
 - [Panduan SCRUM](https://github.com/medigoid/tech-handbook/blob/develop/scrum.md)
 
-Bagian ini berisi tentang proses SCRUM yang berjalan di Klinik Pintar Indonesia, dan penerapannya di sistem kolaborasi yang digunakan
+Bagian ini berisi tentang proses SCRUM yang berjalan di Medigo Indonesia, dan penerapannya di sistem kolaborasi yang digunakan ( Trello )
 
 - [Kolaborasi & Review menggunakan _Pull Request_](https://github.com/medigoid/tech-handbook/blob/develop/pull-request-workflow.md)
 
