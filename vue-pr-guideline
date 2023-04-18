@@ -1,0 +1,108 @@
+Before submitting Pull Requests for VueJS Typescript repository, please follow below guidelines
+
+## Code Formatting
+  - [ ] You have passed this command `npm run lint && npm run type-check`
+  - [ ] You have check and fix code format using `npx prettier --write "src/**/*.vue" "src/**/*.ts"`
+  - [ ] You follow [Klinik Pintar Tech Handbook](https://github.com/klinikpintar/tech-handbook)
+
+## Security
+
+- [ ] You have setup Sonarqube (sonar.tools.klinikpintar.id)
+- [ ] You run Sonarqube command using local token and fix and issues related to your PR
+
+## UX
+
+- [ ] You have added empty states to stateful components
+- [ ] You have added loading states to components with async process
+- [ ] You have made stateful components refresh their data after their state is mutated when it make sense
+
+  <details>
+    <summary>Example</summary>
+
+    - Refetch the list of patients after submitting a patient form
+    - Refetch the list of appointments after updating an appointment status
+  </details>
+
+## Analytic
+
+- [ ] You have added the Google Tag Manager event to key action components
+
+  <details>
+    <summary>Example</summary>
+
+    ```html
+    <button data-gtm-event="btn-create-user">Simpan</button>
+    ```
+  </details>
+
+## Testing
+
+- [ ] You have added the id HTML attribute to these elements
+
+  <details>
+    <summary>Specifications</summary>
+
+    - Non-interactive elements
+
+      | Element              | Naming Convention | Example                 |
+      |----------------------|-------------------|-------------------------|
+      | Section              | `sec_<Name>`      | `sec_assessment`        |
+      | Table                | `tbl_<Name>`      | `tbl_assessments_list` |
+      | Div, Span, Paragraph | `txt_<Name>`      | `txt_assessment_title`  |
+
+    - Interactive elements
+
+      | Element    | Naming Convention     | Example           |
+      |------------|-----------------------|-------------------|
+      | Text Field | `tf_<Name>`           | `tf_full_name`    |
+      | Select     | `dd_<Name>`           | `dd_status`       |
+      | Checkbox   | `cb_<Name>`           | `cb_agree_tnc`    |
+      | Radio      | `rb_<Name>`           | `rb_gender`       |
+      | Button     | `btn_<Action>_<Name>` | `btn_create_user` |
+  </details>
+
+- [ ] You have added unit tests
+
+## Code Style
+
+- [ ] You are using `camelCase` to all variables and functions
+- [ ] You are using `PascalCase` to types
+- [ ] You are using approved [terminology](https://github.com/kettanaito/naming-cheatsheet/blob/main/README.md)
+- [ ] You have fixed all errors and warnings after running the linter/formatter
+
+  <details>
+    <summary>Example</summary>
+
+    - No errors and warnings from ESLint
+    - No errors and warnings from Prettier
+  </details>
+
+## TypeScript
+
+- [ ] Your code has no errors and warnings after running `npm run type-check`
+- [ ] Your code is fully typesafe
+
+  <details>
+    <summary>Example</summary>
+
+    ```ts
+    // ✗ Don't
+    const updateProfile = async (data: any) => {
+      return axios.put('/profile', data)
+    }
+
+    // ✓ Do
+    type UserProfile = {
+      id: string
+      name: string
+    }
+
+    type UpdateProfilePayload = {
+      name: string
+    }
+
+    const updateProfile = async (data: UpdateProfilePayload) => {
+      return axios.put<UserProfile>('/profile', data)
+    }
+    ```
+  </details>
